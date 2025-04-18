@@ -15,17 +15,17 @@ pnum := $(subst p,,${prob})
 
 all:
 ifeq ($(file),)
-	$(error You must specify the file, e.g., make -f ../Makefile file=main.cpp prob=p1)
+	$(error You must specify the file, e.g., make -f ../makefile file=main.cpp prob=p1)
 endif
 ifeq ($(prob),)
-	$(error You must specify the prob, e.g., make -f ../Makefile file=main.cpp prob=p1)
+	$(error You must specify the prob, e.g., make -f ../makefile file=main.cpp prob=p1)
 endif
 	@echo "Compiling $(src) for problem $(prob)..."
 	$(CXX) $(CXXFLAGS) $(src) -o $(binary).bin
 
 run:
 ifeq ($(prob),)
-	$(error You must specify the prob to run, e.g., make -f ../Makefile prob=p1 run)
+	$(error You must specify the prob to run, e.g., make -f ../makefile prob=p1 run)
 endif
 
 	@inputs=$$(ls -r ${io_folder}input${pnum}*.txt 2>/dev/null); \
