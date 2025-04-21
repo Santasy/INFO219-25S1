@@ -11,5 +11,5 @@ make -f ../makefile file=F_Ardent_Flames.cpp prob=p1
 make -f ../makefile run prob=p1
 ```
 
-Sebastián Pacheco
+Sebastián P. Cáceres
 2025, Primer Semestre.
