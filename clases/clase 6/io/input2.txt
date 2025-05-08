@@ -1,0 +1,12 @@
+5
+3 10 8 6 11
+4
+1
+10
+3
+11
+
+
+
+\Fuerza bruta: N x Q O(N^2)
+Ordenas: O(N log n) + Q * (log n)
